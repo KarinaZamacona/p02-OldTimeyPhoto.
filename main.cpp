@@ -31,10 +31,13 @@ int main()
                                 rgb.red=0;
                                 rgb.blue=0;
                                 rgb.green=0;
+                                bmp[i][j] = rgb;
+
                         }
                 }
-                 image.fromPixelMatrix(bmp);
-                 image.save(imageName);
+
+               image.fromPixelMatrix(bmp);
+               image.save("newImage.bmp");
 
 
                 return 0;
