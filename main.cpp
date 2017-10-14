@@ -28,9 +28,10 @@ int main()
                         for (int j=0; j<bmp[0].size();j++)
                         {
                                 rgb= bmp[i][j];
-                                rgb.red=0;
-                                rgb.blue=0;
-                                rgb.green=0;
+                                int avg = (rgb.red +rgb.green +rgb.blue)/3;
+                                rgb.red = avg;
+                                rgb.green = avg;
+                                rgb.blue = avg;
                                 bmp[i][j] = rgb;
 
                         }
